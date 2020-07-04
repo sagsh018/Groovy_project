@@ -1,0 +1,13 @@
+1) Groovy is powerful optionally typed and dynamic language for the Java plateform, aimed at improving developer 
+    productivity.
+2) It has flat learning curv -- As this language is concise, readable and expressive syntax, easy to learn for java 
+    developers
+3) It has smooth integration with Java and any other third part library written in Java
+4) Vibrant and rich ecosystem -- Used for web development, reactive applications, concurrency / asynchronous / parallelism 
+    library, test framework, build tools, code analysis, GUI building, used in jenkins.
+5) powerful features -- Clousers, builders, runtime & compile-time meta-programming, functional programming, type 
+    inference  and static compilation
+6) Domain Specific Language (DSL) -- Flexible and melleable syntax, advance integration and customaization mechanisms,
+    to integrate readable business rules in your applications.
+7) Scripting and testing glue -- Great for writing concise and maintainable tests, and for all your build and automation 
+    tasks.
