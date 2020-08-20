@@ -1,0 +1,100 @@
+1) JDK installation
+    We already have java jdk installed and also its system path saved inside environment variable
+    # java --version
+        openjdk 11.0.7 2020-04-14 LTS
+        OpenJDK Runtime Environment Corretto-11.0.7.10.1 (build 11.0.7+10-LTS)
+        OpenJDK 64-Bit Server VM Corretto-11.0.7.10.1 (build 11.0.7+10-LTS, mixed mode
+    # echo $JAVA_HOME
+        C:\Program Files\Amazon Corretto\jdk11.0.7_10
+2) Installing Groovy on Windows
+    URL to download groovy ==> https://groovy.apache.org/download.html
+    on this page you can download the binary of groovy using below link
+    https://dl.bintray.com/groovy/maven/apache-groovy-binary-3.0.5.zip
+    once we download the zip file from above link we can unzip and extract that in our working directory
+    /c/Users/Sagar/projects/Groovy_project
+    once the the binary is unzipped then we will have below folder in our working space with all configuration in it
+    /c/Users/Sagar/projects/Groovy_project/groovy-3.0.5
+    lastly we have to add the groovy path to environment variable
+    After restarting the vscode we can type the below command in order to check the version of Groovy installed
+    # groovy --version
+    Groovy Version: 3.0.5 JVM: 11.0.7 Vendor: Amazon.com Inc. OS: Windows 7
+    # echo $GROOVY_HOME
+    C:\Users\Sagar\projects\Groovy_project\groovy-3.0.5
+3) SDKMAN ==> similar to RVM in ruby, used to install multiple versions of ruby in parallel and then we can switch 
+    to different versions of ruby as we need
+    we will try that later if required
+4) groovysh 
+    a) It is a command line application that allows us easy access to evaluate groovy expressions, define classes,
+        and run some simple experiments. it is a easy way to work with groovy.
+    b) To start this groovy shell we can start it with the help of groovysh on unix and groovysh.bat on windows system
+    c) We can get the information/documentation about groovy from the below link    
+        http://groovy-lang.org/groovysh.html
+    d) so on our command prompt we can run groovysh an get into the groovy prompt 
+        # groovy --version
+        # groovy --help
+        # groovysh
+            $ groovysh
+            Groovy Shell (3.0.5, JVM: 11.0.7)
+            Type ':help' or ':h' for help.
+            ----------------------------------------------------------------------------------------------------------------------------------------------------------
+            groovy:000>
+        now we can type commands and expressions on this prompt:
+        $ 1+1
+        $ println "Hello World!"
+        We can also type multi line code as well
+            groovy:000> class Person {
+            groovy:001>    def sayHello () {
+            groovy:002>           println "Hello"
+            groovy:003>    }
+            groovy:004> }
+        Now we can create the object for this class
+            groovy:000> person = new Person()
+            ===> Person@1697f2b3
+        Then we call call the method of class Person class with the help of object of that class
+            groovy:000> person.sayHello()
+            Hello
+            ===> null
+        Another example for function :
+            groovy:000> def hello(name){
+            groovy:001>   println "Hello, $name"
+            groovy:002> }
+            ===> true
+            groovy:000> hello("sagar")  
+            Hello, sagar
+            ===> null
+        We can also do all sort of commands and for that we can use help command to list all the commands
+            groovy:000> :h
+
+            For information about Groovy, visit:
+                http://groovy-lang.org
+
+            Available commands:
+                :help      (:h ) Display this help message
+                ?          (:? ) Alias to: :help
+                :exit      (:x ) Exit the shell
+                :quit      (:q ) Alias to: :exit
+                import     (:i ) Import a class into the namespace
+                :display   (:d ) Display the current buffer
+                :clear     (:c ) Clear the buffer and reset the prompt counter
+                :show      (:S ) Show variables, classes or imports
+                :inspect   (:n ) Inspect a variable or the last result with the GUI object browser
+                :purge     (:p ) Purge variables, classes, imports or preferences
+                :edit      (:e ) Edit the current buffer
+                :load      (:l ) Load a file or URL into the buffer
+                .          (:. ) Alias to: :load
+                :save      (:s ) Save the current buffer to a file
+                :record    (:r ) Record the current session to a file
+                :history   (:H ) Display, manage and recall edit-line history
+                :alias     (:a ) Create an alias
+                :set       (:= ) Set (or list) preferences
+                :grab      (:g ) Add a dependency to the shell environment
+                :register  (:rc) Register a new command with the shell
+                :doc       (:D ) Open a browser window displaying the doc for the argument
+
+            For help on a specific command type:
+                :help command
+            similarly to quit the groovy shell we can do
+                :q
+            to clear the screen
+                :c
+                
